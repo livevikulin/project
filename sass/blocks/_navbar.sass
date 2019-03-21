@@ -1,0 +1,83 @@
+.navbar 
+    background-color: #ffffff
+    box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
+    opacity: 0.9
+    height: 55px
+    &-block 
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding-left: 2px
+    &-list 
+        display: flex
+        flex-direction: row
+        list-style: none
+        padding-left: 0
+        &__menu 
+            margin-right: 37px
+            text-decoration: none
+            &:last-child 
+                margin-right: 0
+            &:nth-child(2)
+                margin-right: 35px
+            &:nth-child(4)
+                margin-right: 37px
+        &__link 
+            color: #000
+            font-size: 14px
+            +reg
+            text-decoration: none
+            outline: none
+            border-bottom: 1px solid #adadad
+    &-feedback 
+        text-align: right
+        &__phone 
+            display: block
+            text-decoration: none
+            color: #1f1f1f
+            font-size: 17px
+            +bold 
+            outline: none
+        &__contacts 
+            color: #22bac1
+            font-size: 14px
+            +reg
+            text-decoration: none
+            border-bottom: 1px solid #b6dcde
+            outline: none
+.hamburger .line
+  width: 50px
+  height: 5px
+  background-color: #000
+  display: none
+  margin: 8px
+  transition: all 0.3s ease-in-out
+
+.hamburger:hover
+  cursor: pointer
+
+#hamburger-1.is-active .line:nth-child(2)
+  opacity: 0
+
+#hamburger-1.is-active .line:nth-child(1)
+  transform: translateY(13px) rotate(45deg)
+
+#hamburger-1.is-active .line:nth-child(3)
+  transform: translateY(-13px) rotate(-45deg)
+
+@media (max-width: 768px)
+    .hamburger .line 
+        display: block
+    .navbar 
+        &-start 
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+        &-list 
+            display: none
+
+
+
+  
+

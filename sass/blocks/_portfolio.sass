@@ -1,0 +1,100 @@
+.portfolio 
+    background-color: rgba(232, 232, 232, 0.4)
+    &-block 
+        padding-top: 96px
+        padding-bottom: 99px
+        text-align: center
+        &__slider 
+            display: flex
+            flex-direction: row
+            align-items: center
+    &-title 
+        color: #000000
+        font-size: 36px
+        +reg
+        margin-top: 0
+        position: relative
+        margin-bottom: 65px
+        &:after 
+            content: ''
+            position: absolute
+            width: 31px
+            height: 2px
+            background-color: #23bac1
+            top: 67px
+            right: 567px
+    &-subtitle 
+        display: block
+        color: #000000
+        font-size: 20px
+        +light
+        margin-bottom: 95px
+    &-info 
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding-left: 87px
+        position: relative
+        &__title 
+            color: #000000
+            font-size: 24px
+            +reg 
+            margin-top: 0
+            margin-bottom: 48px
+        &__description 
+            display: block
+            color: #7f7f7f
+            font-size: 12px
+            +light
+            line-height: 20px
+            margin-bottom: 7px
+        &__subtitle 
+            color: #000000
+            font-size: 16px
+            +light
+            line-height: 20px
+        &__block
+            display: flex
+            justify-content: space-between
+            padding-top: 53px
+            width: 100%
+        &__box 
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+        &__button 
+            width: 216px
+            height: 60px
+            background-color: #23bac1
+            color: #ffffff
+            font-size: 13px
+            +sbold
+            text-transform: uppercase
+            letter-spacing: 0.33px
+            border: none
+            outline: none
+            position: absolute
+            bottom: 0
+            &:hover 
+                background-color: darken(#23bac1, 5%) 
+                cursor: pointer
+    &-slider 
+        max-width: 902px
+        margin: auto
+        &__image 
+            display: block
+        &__box 
+            outline: none
+.arrows-left 
+    &:hover
+        cursor: pointer
+.arrows-right 
+    &:hover
+        cursor: pointer
+.slick-initialized 
+    display: flex
+.slick-slide 
+    display: flex
+.slick-arrow.slick-hidden
+    display: block
+    outline: none

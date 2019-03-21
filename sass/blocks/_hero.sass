@@ -1,0 +1,141 @@
+.hero 
+    background: url("../img/hero/hero-bg.png") #010304
+    padding-top: 110px
+    padding-bottom: 78px
+    &-block 
+        display: flex
+        justify-content: space-between
+        &__info 
+            flex-basis: 50%
+        &__form 
+            flex-basis: 50%
+            display: flex
+            justify-content: flex-end
+    &-title 
+        color: #fffafa
+        font-size: 48px
+        +reg
+        line-height: 60px
+        margin-top: 0
+        margin-bottom: 30px
+    &-subtitle
+        display: block
+        color: #fffafa
+        font-size: 20px
+        +light
+        margin-bottom: 63px
+    &-list 
+        list-style: none
+        padding-left: 0
+        &__item 
+            display: flex
+            flex-direction: row
+            align-items: center
+            margin-bottom: 21px
+        &__image 
+            width: 35px
+            height: 35px
+            border: 1px solid rgba(255, 255, 255, 0.2)
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 25px
+        &__text 
+            color: #ffffff
+            font-size: 15px
+            +light
+    &-form 
+        width: 370px
+        height: 429px
+        border: 1px solid #ffffff
+        background-color: #ffffff
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        margin-top: 13px
+        &__text 
+            max-width: 234px
+            font-size: 18px
+            +reg
+            margin-bottom: 28px
+            margin-top: -10px
+        &__textb
+            +bold
+        &__input 
+            display: block
+            text-align: center
+            padding: 17px 63px
+            margin-bottom: 15px
+            color: #7c7c7c
+            font-size: 13px
+            +light
+            border: 1px solid #e8e8e8
+            &:nth-child(4) 
+                margin-bottom: 20px
+        &__button 
+            width: 260px
+            height: 60px
+            background-color: #23bac1
+            color: #ffffff
+            font-size: 15px
+            +sbold
+            text-transform: uppercase
+            letter-spacing: 0.38px
+            outline: none
+            border: none
+            &:hover 
+                background-color: darken(#23bac1, 5%) 
+                cursor: pointer
+@media (max-width: 1200px)
+    .hero 
+        &-block 
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+@media (max-width: 768px)
+    .hero 
+        padding-top: 50px
+        padding-bottom: 39px
+        &-block 
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            &__info
+                flex-basis: 100%
+            &__form 
+                flex-basis: 100%
+                display: flex
+                justify-content: center
+        &-title 
+            font-size: 24px
+            line-height: 1.4
+        &-subtitle 
+            font-size: 16px
+            margin-bottom: 35px
+        &-list 
+            &__text
+                font-size: 12px
+        &-form 
+            width: 290px
+            height: 429px
+        &__text 
+            max-width: 234px
+            font-size: 14px
+            margin-bottom: 28px
+            margin-top: -10px
+        &__input 
+            padding: 10px 40px
+            font-size: 13px
+            &:nth-child(4) 
+                margin-bottom: 20px
+        &__button 
+            width: 260px
+            height: 60px
+            font-size: 12px
+           
+
