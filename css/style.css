@@ -54,6 +54,10 @@ body {
   }
 }
 
+.map {
+  height: 416px;
+}
+
 .navbar {
   background-color: #ffffff;
   -webkit-box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28);
@@ -763,6 +767,13 @@ body {
 }
 
 .portfolio-slider__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   outline: none;
 }
 
